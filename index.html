@@ -153,4 +153,5 @@
       carrito.forEach(item,idx)=>{}
         const li=document.createElement("li");
         li.innerHTML=`${item.cantPizza}x ${item.tamano} ${item.sabor} ${item.extra?"(extra queso)":""}
-          ${item.cantBeb>0?` + ${item.cantBeb}x ${item.tamBeb} ${item.bebida}`:""}
+          ${item.cantBeb>0?` + ${item.cantBeb}x ${item.tamBeb} ${item.bebida}`:""
+          } <span class="badge">${formatoCOP(item.subtotal)}</span>
